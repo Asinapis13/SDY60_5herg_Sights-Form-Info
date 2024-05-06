@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /*background-color: green;*/
+  background-image: url(Ταξίδια.jpg);
+}
+
+h1 {
+  color: #333;
+}
+
+.circle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto; /* Center horizontally */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Adjust width */
+  height: 100px; /* Adjust height */
+}
+
+
+.circle-btn:hover {
+  background-color: #0056b3;
+  border-radius: 50%; /* Maintain circular shape */
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.menu {
+  display: none; /* Initially hide the menu */
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 150px;
+  text-align: left;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  .circle-btn {
+      width: 80px;
+      height: 80px;
+      font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* Adjustments for larger screens */
+  .container {
+      max-width: 800px; /* Adjust the maximum width as needed */
+      margin: 0 auto; /* Center the container horizontally */
+      text-align: left; /* Align text to the left */
+  }
+}
